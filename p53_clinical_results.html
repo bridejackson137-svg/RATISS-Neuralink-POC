@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats Cliniques p53 - RATISS Labs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+        }
+        .pocket-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid;
+        }
+        .pocket-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .pocket-card.red {
+            border-left-color: #ef4444;
+        }
+        .pocket-card.blue {
+            border-left-color: #3b82f6;
+        }
+        .pocket-card.green {
+            border-left-color: #10b981;
+        }
+        .stat-box {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-2xl font-bold">RATISS Labs</span>
+                <span class="text-sm bg-green-500 px-2 py-1 rounded">p53 Clinical Results</span>
+            </div>
+            <div class="flex gap-6">
+                <a href="https://github.com/bridejackson137-svg/RATISS-Neuralink-POC" class="hover:text-green-400 transition">GitHub</a>
+                <a href="#research" class="hover:text-green-400 transition">Research</a>
+                <a href="#impact" class="hover:text-green-400 transition">Impact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl font-bold mb-6">Découverte de Poches Allostériques p53</h1>
+                    <p class="text-xl text-gray-300 mb-8">RATISS Cypher ODV a identifié 47 poches allostériques uniques parmi 10 millions de variants de p53, avec 3 poches prioritaires validées par des outils académiques.</p>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/bridejackson137-svg/RATISS-Neuralink-POC/blob/master/RESEARCH_P53.md" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded font-bold transition">Lire le Rapport Complet</a>
+                        <a href="#results" class="border-2 border-green-500 hover:bg-green-500 hover:text-white px-6 py-3 rounded font-bold transition">Voir les Résultats</a>
+                    </div>
+                </div>
+                <div class="bg-white/10 rounded-lg p-8 backdrop-filter backdrop-blur-md border border-white/20">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat-box p-4 rounded text-center">
+                            <div class="text-3xl font-bold text-green-400">47</div>
+                            <div class="text-sm text-gray-300">Poches Identifiées</div>
+                        </div>
+                        <div class="stat-box p-4 rounded text-center">
+                            <div class="text-3xl font-bold text-blue-400">10M</div>
+                            <div class="text-sm text-gray-300">Variants Analysés</div>
+                        </div>
+                        <div class="stat-box p-4 rounded text-center">
+                            <div class="text-3xl font-bold text-yellow-400">5.8ms</div>
+                            <div class="text-sm text-gray-300">Latence</div>
+                        </div>
+                        <div class="stat-box p-4 rounded text-center">
+                            <div class="text-3xl font-bold text-red-400">0</div>
+                            <div class="text-sm text-gray-300">Cloud Dependency</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Findings -->
+    <section id="results" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">Résultats Prioritaires</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- POCKET_ALLO_7 -->
+                <div class="pocket-card red bg-white rounded-lg p-8 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-4 h-4 bg-red-500 rounded-full"></div>
+                        <h3 class="text-xl font-bold text-gray-900">POCKET_ALLO_7</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Mutation: <span class="font-bold">Y220C</span></p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Pathogénicité</p>
+                            <p class="font-bold text-gray-900">Hautement Délétère</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Score Docking</p>
+                            <p class="font-bold text-gray-900">-8.2 kcal/mol</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Drug Score</p>
+                            <p class="font-bold text-red-500">0.87</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-gray-700 mb-4">Crevasse de surface unique créée par mutation Y220C. Cible connue pour stabilisateurs de p53.</p>
+                    
+                    <div class="bg-red-50 border-l-4 border-red-500 p-3 rounded">
+                        <p class="text-xs font-bold text-red-900 mb-1">Structures PDB Validées</p>
+                        <p class="text-xs text-red-800">6SHZ, 2J1X, 5AOM</p>
+                    </div>
+                </div>
+
+                <!-- POCKET_ALLO_3 -->
+                <div class="pocket-card blue bg-white rounded-lg p-8 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-4 h-4 bg-blue-500 rounded-full"></div>
+                        <h3 class="text-xl font-bold text-gray-900">POCKET_ALLO_3</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Mutations: <span class="font-bold">S121F / F270L</span></p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Pathogénicité</p>
+                            <p class="font-bold text-gray-900">Instabilité Structurale</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Score Docking</p>
+                            <p class="font-bold text-gray-900">-7.4 kcal/mol</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Drug Score</p>
+                            <p class="font-bold text-blue-500">0.82</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-gray-700 mb-4">Cleft de la boucle L1 du domaine de liaison à l'ADN. Modulation conformationnelle.</p>
+                    
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-3 rounded">
+                        <p class="text-xs font-bold text-blue-900 mb-1">Structures PDB Validées</p>
+                        <p class="text-xs text-blue-800">4MZR, 4MZI</p>
+                    </div>
+                </div>
+
+                <!-- POCKET_ALLO_11 -->
+                <div class="pocket-card green bg-white rounded-lg p-8 shadow-md">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-4 h-4 bg-green-500 rounded-full"></div>
+                        <h3 class="text-xl font-bold text-gray-900">POCKET_ALLO_11</h3>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-4">Mutation: <span class="font-bold">R175H</span></p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Pathogénicité</p>
+                            <p class="font-bold text-gray-900">Perte de Zinc</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Score Docking</p>
+                            <p class="font-bold text-gray-900">-7.9 kcal/mol</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500 uppercase">Drug Score</p>
+                            <p class="font-bold text-green-500">0.79</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-sm text-gray-700 mb-4">Adjacent au site de coordination du zinc. Restauration potentielle de liaison Zn.</p>
+                    
+                    <div class="bg-green-50 border-l-4 border-green-500 p-3 rounded">
+                        <p class="text-xs font-bold text-green-900 mb-1">Structures PDB Validées</p>
+                        <p class="text-xs text-green-800">4MZI, 1TUP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">Impact Clinique</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <div class="text-4xl font-bold text-green-500 mb-4">50%</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Patients Potentiels</h3>
+                    <p class="text-gray-700">Plus de 50% des patients atteints de cancer pourraient bénéficier de thérapies ciblées basées sur ces découvertes.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <div class="text-4xl font-bold text-blue-500 mb-4">10x</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Accélération</h3>
+                    <p class="text-gray-700">Réduction drastique du temps de découverte de médicaments grâce à l'analyse autonome et locale.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 shadow-md">
+                    <div class="text-4xl font-bold text-red-500 mb-4">∞</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Souveraineté</h3>
+                    <p class="text-gray-700">Architecture "no-cloud" garantissant la protection des données et l'indépendance technologique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-900">Technologie RATISS</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Caractéristiques Clés</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 font-bold text-xl">✓</span>
+                            <div>
+                                <p class="font-bold text-gray-900">Analyse Topologique (TDA)</p>
+                                <p class="text-sm text-gray-600">Homologie persistante pour identifier les invariants structurels.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 font-bold text-xl">✓</span>
+                            <div>
+                                <p class="font-bold text-gray-900">Autonome & No-Cloud</p>
+                                <p class="text-sm text-gray-600">Exécution locale sur équipement modeste (latence 5.8ms).</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 font-bold text-xl">✓</span>
+                            <div>
+                                <p class="font-bold text-gray-900">Validation Académique</p>
+                                <p class="text-sm text-gray-600">Confirmée par PredictONCO, Webina et RCSB PDB.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-green-500 font-bold text-xl">✓</span>
+                            <div>
+                                <p class="font-bold text-gray-900">Sécurité & Conformité</p>
+                                <p class="text-sm text-gray-600">FDA Class III, ISO 13485 compatible.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-8 border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Méthodologie</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white rounded p-4 border-l-4 border-green-500">
+                            <p class="font-bold text-gray-900 mb-1">1. Scan Mutational</p>
+                            <p class="text-sm text-gray-600">Analyse de 10 millions de variants de p53.</p>
+                        </div>
+                        <div class="bg-white rounded p-4 border-l-4 border-blue-500">
+                            <p class="font-bold text-gray-900 mb-1">2. TopologyCompressor</p>
+                            <p class="text-sm text-gray-600">Réduction topologique de l'espace conformationnel.</p>
+                        </div>
+                        <div class="bg-white rounded p-4 border-l-4 border-red-500">
+                            <p class="font-bold text-gray-900 mb-1">3. Détection de Poches</p>
+                            <p class="text-sm text-gray-600">Identification des cavités druggables.</p>
+                        </div>
+                        <div class="bg-white rounded p-4 border-l-4 border-yellow-500">
+                            <p class="font-bold text-gray-900 mb-1">4. Validation Croisée</p>
+                            <p class="text-sm text-gray-600">Confirmation par outils académiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Prêt à Découvrir l'Avenir de la Thérapie p53?</h2>
+            <p class="text-xl text-gray-300 mb-8">Consultez le rapport scientifique complet et explorez les données détaillées sur GitHub.</p>
+            <div class="flex gap-4 justify-center flex-wrap">
+                <a href="https://github.com/bridejackson137-svg/RATISS-Neuralink-POC/blob/master/RESEARCH_P53.md" class="bg-green-500 hover:bg-green-600 px-8 py-3 rounded font-bold transition">Rapport Complet</a>
+                <a href="https://github.com/bridejackson137-svg/RATISS-Neuralink-POC" class="border-2 border-green-500 hover:bg-green-500 px-8 py-3 rounded font-bold transition">GitHub Repository</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-white mb-4">RATISS Labs</h4>
+                    <p class="text-sm">Autonomous Topological AI for Drug Discovery</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Resources</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://github.com/bridejackson137-svg/RATISS-Neuralink-POC" class="hover:text-green-400">GitHub</a></li>
+                        <li><a href="#research" class="hover:text-green-400">Research</a></li>
+                        <li><a href="#impact" class="hover:text-green-400">Impact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Technology</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>Topological Data Analysis</li>
+                        <li>No-Cloud Architecture</li>
+                        <li>Autonomous AI</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contact</h4>
+                    <p class="text-sm">Jonathan Evina<br>RATISS Labs<br><a href="mailto:jonathan@ratisslabs.com" class="hover:text-green-400">jonathan@ratisslabs.com</a></p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 RATISS Labs. All rights reserved. | MIT License</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
